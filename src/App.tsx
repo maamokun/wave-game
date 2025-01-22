@@ -17,7 +17,7 @@ export default function WavePuzzle() {
     const [wave2, setWave2] = useState(50);
     const [wave3, setWave3] = useState(50);
     const [level, setLevel] = useState(0);
-    const [targets, setTargets] = useState([]);
+    const [targets, setTargets] = useState<number[][]>([]);
     const [currentTarget, setCurrentTarget] = useState(0);
     const [isCleared, setIsCleared] = useState(false);
     const [timeLeft, setTimeLeft] = useState(300);
@@ -71,9 +71,7 @@ export default function WavePuzzle() {
     }, [timeLeft, isCleared]);
 
     const checkMatch = () => {
-        //@ts-expect-error
         const isMatch = targetAmplitudes.every(
-            //@ts-expect-error
             (target, i) => Math.abs(target - [wave1, wave2, wave3][i]) < 5,
         );
         if (isMatch) {
@@ -100,7 +98,6 @@ export default function WavePuzzle() {
 
     const startLevel = (level: number) => {
         setLevel(level);
-        //@ts-expect-error
         setTargets([
             randomArray(3, level),
             randomArray(3, level),
