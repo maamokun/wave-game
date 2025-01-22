@@ -168,8 +168,8 @@ export default function WavePuzzle() {
                         {level === 1
                             ? "Normal"
                             : level === 2
-                              ? "Hard"
-                              : "Impossible"}
+                                ? "Hard"
+                                : "Impossible"}
                     </p>
                     <p className="text-xl">Final Score: {timeLeft}</p>
                     <div className={"flex flex-row space-x-5"}>
@@ -184,9 +184,9 @@ export default function WavePuzzle() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                        <button className="mt-6 px-6 py-3 btn btn-info text-white">
-                            Share on Twitter
-                        </button>
+                            <button className="mt-6 px-6 py-3 btn btn-info text-white">
+                                Share on Twitter
+                            </button>
                         </a>
                     </div>
                 </div>
@@ -218,8 +218,8 @@ export default function WavePuzzle() {
                                         level === 1
                                             ? "10"
                                             : level === 2
-                                              ? "5"
-                                              : "1"
+                                                ? "5"
+                                                : "1"
                                     }
                                     value={wave}
                                     onChange={(e) =>
@@ -240,24 +240,24 @@ export default function WavePuzzle() {
                     >
                         Check Match
                     </button>
-                    <footer className="text-center py-10">
-                        <div className={"flex flex-col space-y-5"}>
-                            <p>
-                                Original code by
-                                <a
-                                    href={
-                                        "https://github.com/peta-lite/wave-app"
-                                    }
-                                    className={"text-blue-400"}
-                                >
-                                    {" "}
-                                    petalite
-                                </a>
-                            </p>
-                        </div>
-                    </footer>
                 </>
             )}
+            <footer className="text-center py-10">
+                <div className={"flex flex-col space-y-5"}>
+                    <p>
+                        Original code by
+                        <a
+                            href={
+                                "https://github.com/peta-lite/wave-app"
+                            }
+                            className={"text-blue-400"}
+                        >
+                            {" "}
+                            petalite
+                        </a>
+                    </p>
+                </div>
+            </footer>
         </div>
     );
 }
