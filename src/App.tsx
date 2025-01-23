@@ -253,7 +253,7 @@ export default function WavePuzzle() {
                             className={"text-blue-400"}
                         >
                             {" "}
-                            petalite
+                            Hirumi-Tower
                         </a>
                     </p>
                 </div>
